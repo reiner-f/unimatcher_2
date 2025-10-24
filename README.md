@@ -25,7 +25,7 @@ It transforms uncertainty into confidence by offering personalized, data-driven 
 
 - **Machine Learning**: Cosine Similarity, KNN, Logistic Regression
 - **Backend**: Spring Boot, PostgreSQL, JPA
-- **Frontend**: JavaFX or Thymeleaf
+- **Frontend**: JavaFX and Thymeleaf
 - **Architecture**: Controller → Service → ML → Repository → JSON
 
 ---
