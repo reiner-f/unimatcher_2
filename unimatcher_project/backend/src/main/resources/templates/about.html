@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>About Us — UniMatcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+<div th:insert="~{navbar :: navbar}"></div>
+<section class="max-w-5xl mx-auto text-center px-8 py-20">
+    <h1 class="text-5xl font-extrabold mb-6">
+        About <span class="text-indigo-400">UniMatcher</span>
+    </h1>
+    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+        An AI-powered platform that helps future students find their perfect university match —
+        based on their interests, preferences, and academic achievements.
+    </p>
+</section>
+
+<section class="max-w-5xl mx-auto px-8 pb-20 grid md:grid-cols-3 gap-8 text-center">
+
+    <div class="bg-gray-800 rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-indigo-400 mb-3">AI-Powered Recommendations</h3>
+        <p class="text-gray-300">
+            We use advanced algorithms to analyze your academic profile and personal interests,
+            helping you discover programs that truly fit who you are.
+        </p>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Smart Matching Technology</h3>
+        <p class="text-gray-300">
+            Powered by <span class="font-semibold">Cosine Similarity</span>,
+            <span class="font-semibold">KNN</span>, and
+            <span class="font-semibold">Logistic Regression</span>,
+            UniMatcher delivers precise, meaningful, and data-driven recommendations.
+        </p>
+    </div>
+
+    <div class="bg-gray-800 rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Intuitive Experience</h3>
+        <p class="text-gray-300">
+            With a sleek, <span class="font-semibold">Netflix-style interface</span>,
+            UniMatcher lets you explore university programs through personalized cards,
+            scores, and recommendations — fast, easy, and genuinely fun.
+        </p>
+    </div>
+</section>
+<section class="text-center max-w-3xl mx-auto px-8 pb-20">
+    <p class="text-gray-400 text-lg">
+        Our mission is simple — to make your journey to higher education smarter,
+        clearer, and uniquely yours.
+    </p>
+</section>
+<footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+    <p>&copy; <span th:text="${#dates.format(today, 'yyyy')}">2025</span> UniMatcher. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

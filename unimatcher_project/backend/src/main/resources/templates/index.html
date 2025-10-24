@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>UniMatcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+<!-- Navbar -->
+<div th:insert="~{navbar :: navbar}"></div>
+
+<!-- Logout message -->
+<div th:if="${param.logout}" class="text-green-400 mt-2 text-center">
+  You have successfully logged out.
+</div>
+
+<!-- Hero section -->
+<section class="max-w-6xl mx-auto px-8 py-20 text-center">
+  <h1 class="text-5xl font-extrabold mb-6">
+    Welcome to <span class="text-indigo-400">UniMatcher</span>
+  </h1>
+  <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+    UniMatcher is your intelligent assistant for finding the university that truly fits you.
+    Create your account, fill in your school subjects, grades, and personal interests —
+    then let our advanced matching algorithms and AI analysis generate personalized study recommendations for you.
+  </p>
+  <a href="/account"
+     class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition">
+    Go to your account
+  </a>
+  <a href="/calendar"
+     class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition">
+    Go to your personalized calendar
+  </a>
+</section>
+
+<!-- How it works -->
+<section class="bg-gray-800 py-16">
+  <div class="max-w-6xl mx-auto px-8 text-center">
+    <h2 class="text-3xl font-bold mb-10">How the Recommendation Process Works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-indigo-400 text-4xl font-extrabold mb-3">1</div>
+        <h3 class="text-2xl font-bold mb-3 text-indigo-400">Complete Your Profile</h3>
+        <p class="text-gray-300">Add your school subjects, grades, and interests directly in your account.</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-indigo-400 text-4xl font-extrabold mb-3">2</div>
+        <h3 class="text-2xl font-bold mb-3 text-indigo-400">AI-Powered Analysis</h3>
+        <p class="text-gray-300">Our advanced algorithms process your information to identify university programs that best match your profile.</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
+        <div class="text-indigo-400 text-4xl font-extrabold mb-3">3</div>
+        <h3 class="text-2xl font-bold mb-3 text-indigo-400">Personalized Recommendations</h3>
+        <p class="text-gray-300">Receive tailored university suggestions and insights to help you make informed choices about your academic future.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intelligent features -->
+<section class="max-w-6xl mx-auto px-8 py-16 text-center">
+  <h2 class="text-3xl font-bold mb-10">Smart Features for a Modern Experience</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="p-6 bg-gray-800 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Personalized Calendar</h3>
+      <p class="text-gray-300">
+        View upcoming events, admission deadlines, and open days from universities that match your recommendations — all in one place.
+      </p>
+    </div>
+    <div class="p-6 bg-gray-800 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold text-indigo-400 mb-3">AI Assistant</h3>
+      <p class="text-gray-300">
+        Need guidance? Our built-in AI assistant can answer your questions, explain study options, and help you refine your preferences.
+      </p>
+    </div>
+    <div class="p-6 bg-gray-800 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Coming Soon</h3>
+      <p class="text-gray-300">
+        Intelligent notifications and upcoming modules are in development — designed to keep you updated with personalized insights and new learning opportunities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm">
+  <p>&copy; <span th:text="${#dates.format(today, 'yyyy')}">2025</span> UniMatcher. All rights reserved.</p>
+</footer>
+</body>
+</html>

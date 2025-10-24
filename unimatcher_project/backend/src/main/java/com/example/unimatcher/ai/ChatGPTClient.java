@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 @Component
 public class ChatGPTClient {
 
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "your_API_key";
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
     private String sendPrompt(String prompt) throws Exception {

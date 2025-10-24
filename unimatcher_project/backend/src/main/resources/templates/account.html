@@ -5,7 +5,15 @@
     <title>UniMatcher</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        form {
+        /* ===== FIX: Prevent navbar from inheriting monospace styles ===== */
+        nav, nav * {
+            font-family: inherit !important;
+            font-style: inherit !important;
+            font-weight: inherit !important;
+        }
+
+        /* ===== ORIGINAL STYLES — restored fully ===== */
+        form#gradesForm {
             position: relative;
             display: block;
             padding: 2.2rem;
@@ -201,10 +209,8 @@
     function generateRecommendations() {
         const form = document.getElementById('recommendationsForm');
 
-        // Curăță inputuri anterioare
         form.querySelectorAll("input[name^='gradesInput'], input[name='interestsInput']").forEach(el => el.remove());
 
-        // Colectează notele
         document.querySelectorAll("#notes input[name^='grades[']").forEach(input => {
             const subject = input.name.match(/grades\[(.*)\]/)[1];
             const grade = input.value;
@@ -217,7 +223,6 @@
             }
         });
 
-        // Colectează interesele
         const interestsInput = document.querySelector("input[name='interestsInput']");
         if (interestsInput && interestsInput.value.trim() !== "") {
             const hiddenInterests = document.createElement("input");

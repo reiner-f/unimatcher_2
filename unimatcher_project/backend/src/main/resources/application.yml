@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ici_think
     username: postgres
-    password: xctj9950
+    password: your_password
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
