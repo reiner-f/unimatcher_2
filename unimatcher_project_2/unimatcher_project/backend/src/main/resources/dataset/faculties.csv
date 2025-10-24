@@ -1,0 +1,121 @@
+faculty_id,name,description,domains,requirements
+1,UAIC - Facultatea de Biologie,Studii în biologie fundamentală și aplicată,Biologie|Ecologie|Biotehnologii,Biologie >= 7.0|Chimie >= 6.5
+2,UAIC - Facultatea de Chimie,Chimie anorganică/organică materiale și mediu,Chimie|Materiale|Mediu,Chimie >= 8.0|Matematica >= 7.0
+3,UAIC - Facultatea de Drept,Drept public și privat criminologie european,Drept|Administrație|Etică,Romana >= 7.5|Istorie >= 7.0
+4,UAIC - Facultatea de Economie și Administrarea Afacerilor,Economie contabilitate management și business,Economie|Contabilitate|Business,Matematica >= 7.0|Economie >= 7.0
+5,UAIC - Facultatea de Educație Fizică și Sport,Kinetoterapie sport și educație fizică,Sport|Kinetoterapie|Psihologie,Biologie >= 7.0|Sport >= 8.0
+6,UAIC - Facultatea de Filosofie și Științe Social-Politice,Filosofie științe politice comunicare,Filosofie|Științe politice|Comunicare,Romana >= 7.0|Istorie >= 7.0
+7,UAIC - Facultatea de Fizică,Fizică teoretică/aplicată instrumentație,Fizica|Tehnologie|Materiale,Fizica >= 7.5|Matematica >= 8.0
+8,UAIC - Facultatea de Geografie și Geologie,Geografie fizică/umană geologie planificare,Geografie|Geologie|GIS,Geografie >= 7.0|Matematica >= 6.5
+9,UAIC - Facultatea de Informatică,Algoritmi software IA și securitate,Informatica|Programare|Securitate,Matematica >= 8.0|Informatica >= 8.0
+10,UAIC - Facultatea de Istorie,Istorie veche/medievală/modernă patrimoniu,Istorie|Arhivistică|Patrimoniu,Romana >= 7.0|Istorie >= 7.5
+11,UAIC - Facultatea de Litere,Filologie lingvistică studii culturale,Litere|Lingvistică|Traducere,Romana >= 7.0|Engleza >= 7.0
+12,UAIC - Facultatea de Matematică,Analiză algebră statistică,Matematica|Statistica|Didactica,Matematica >= 8.0|Informatica >= 7.0
+13,UAIC - Facultatea de Psihologie și Științe ale Educației,Psihologie pedagogie consiliere,Psihologie|Educație|Sociologie,Psihologie >= 8.0|Romana >= 7.0
+14,UAIC - Facultatea de Teologie Ortodoxă,Studii teologice ortodoxe,Teologie|Istorie|Filosofie,Romana >= 7.0|Istorie >= 7.0
+15,UAIC - Facultatea de Teologie Romano-Catolică,Studii teologice romano-catolice,Teologie|Studii religioase|Filosofie,Romana >= 7.0|Istorie >= 7.0
+16,UBB - Facultatea de Matematică și Informatică,Matematică informatică și AI,Matematica|Informatica|Machine Learning,Matematica >= 8.0|Informatica >= 8.0
+17,UBB - Facultatea de Fizică,Fizică teoretică și tehnologică,Fizica|Materiale|Tehnologie,Fizica >= 7.5|Matematica >= 8.0
+18,UBB - Facultatea de Chimie și Inginerie Chimică,Chimie și inginerie chimică,Chimie|Inginerie|Materiale,Chimie >= 8.0|Matematica >= 7.0
+19,UBB - Facultatea de Biologie și Geologie,Biologie geologie știința mediului,Biologie|Geologie|Ecologie,Biologie >= 7.0|Chimie >= 6.5
+20,UBB - Facultatea de Știința și Ingineria Mediului,Medii și tehnologii verzi,Mediu|Ecologie|Energie,Chimie >= 7.0|Geografie >= 7.0
+21,UBB - Facultatea de Geografie,Geografie fizică/umană GIS,Geografie|GIS|Planificare,Geografie >= 7.0|Matematica >= 6.5
+22,UBB - Facultatea de Sociologie și Asistență Socială,Sociologie asistență socială,Sociologie|Politici publice|Psihologie,Romana >= 7.0|Sociologie >= 7.0
+23,UBB - Facultatea de Psihologie și Științe ale Educației,Psihologie pedagogie consiliere,Psihologie|Educație|Neuroștiințe,Psihologie >= 8.0|Romana >= 7.0
+24,UBB - Facultatea de Litere,Studii literare și lingvistice,Litere|Lingvistică|Traducere,Romana >= 7.0|Engleza >= 7.0
+25,UBB - Facultatea de Istorie și Filozofie,Istorie filozofie relații internaționale,Istorie|Filosofie|Studii europene,Romana >= 7.0|Istorie >= 7.5
+26,UBB - Facultatea de Teatru și Film,Teatru film multimedia,Film|Teatru|Multimedia,Romana >= 7.0|Interviu >= 8.0
+27,UBB - Facultatea de Științe Economice și Gestiunea Afacerilor,Economie contabilitate informatică economică,Economie|Contabilitate|Business,Matematica >= 7.0|Economie >= 7.0
+28,UBB - Facultatea de Business,Afaceri și antreprenoriat,Business|Marketing|Management,Matematica >= 6.5|Economie >= 7.0
+29,UBB - Facultatea de Drept,Drept român/european criminologie,Drept|Administrație|Etică,Romana >= 7.5|Istorie >= 7.0
+30,UBB - Facultatea de Științe Politice și Admin. Publică,Politologie administrație publică,Științe politice|Administrație|Politici publice,Romana >= 7.0|Istorie >= 7.0
+31,UBB - Facultatea de Studii Europene,Studii europene relații UE,Studii europene|Politici publice|Comunicare,Engleza >= 7.5|Istorie >= 7.0
+32,UBB - Facultatea de Educație Fizică și Sport,Sport kinetoterapie management sportiv,Sport|Kinetoterapie|Management,Biologie >= 7.0|Sport >= 8.0
+33,UBB - Facultatea de Teologie Ortodoxă,Studii teologice ortodoxe,Teologie|Studii religioase|Filosofie,Romana >= 7.0|Istorie >= 7.0
+34,UBB - Facultatea de Teologie Romano-Catolică,Studii teologice romano-catolice,Teologie|Studii religioase|Filosofie,Romana >= 7.0|Istorie >= 7.0
+35,UBB - Facultatea de Teologie Reformată,Studii teologice reformate,Teologie|Studii religioase|Filosofie,Romana >= 7.0|Istorie >= 7.0
+36,UPB - Facultatea de Automatică și Calculatoare,Informatică sisteme AI și software,Informatica|Automatica|Sisteme,Matematica >= 8.5|Informatica >= 8.0
+37,UPB - Facultatea de Electronică, Telecom. și TI,Electronica telecomunicații embedded,Electronica|Telecom|IT,Matematica >= 8.0|Fizica >= 7.5
+38,UPB - Facultatea de Inginerie Electrică,Inginerie electrică și sisteme de putere,Electrică|Energie|Automatizări,Matematica >= 8.0|Fizica >= 7.0
+39,UPB - Facultatea de Energetică,Producere transport eficiență energie,Energie|Termotehnică|Management,Matematica >= 8.0|Fizica >= 7.0
+40,UPB - Facultatea de Inginerie Mecanică și Mecatronică,Mecanică mecatronică și CAE,Mecanică|Mecatronică|Materiale,Matematica >= 7.5|Fizica >= 7.0
+41,UPB - Facultatea de Ingineria și Managementul Sistemelor Tehnologice,Management industrial și producție,Inginerie|Management|Producție,Matematica >= 7.0|Fizica >= 6.5
+42,UPB - Facultatea de Ingineria Sistemelor Biotehnice,Biotehnică și sisteme bio,Inginerie|Biotehnologii|Mediu,Biologie >= 7.0|Chimie >= 7.0
+43,UPB - Facultatea de Transporturi,Transporturi terestre și aeriene,Transporturi|Mecanică|Logistică,Matematica >= 7.0|Fizica >= 7.0
+44,UPB - Facultatea de Științe Aplicate,Matematică aplicată și fizică aplicată,Matematica|Fizica|Statistică,Matematica >= 8.0|Fizica >= 7.5
+45,UPB - Facultatea de Inginerie Aerospațială,Aeronautică și spațiu,Aerospațial|Mecanică|Materiale,Matematica >= 8.0|Fizica >= 7.5
+46,UPB - Facultatea de Inginerie Industrială și Robotică,Producție digitală și robotică,Producție|Robotică|CAD/CAM,Matematica >= 7.5|Fizica >= 7.0
+47,UPB - Facultatea de Inginerie în Limbi Străine,Programe tehnice cu predare în EN/FR/DE,Informatica|Inginerie|Limbi,Engleza >= 7.5|Matematica >= 7.5
+48,UPB - Facultatea de Inginerie Medicală,Tehnologii medicale și bioinstrumentație,Inginerie medicală|Biotehnologii|IT,Biologie >= 7.5|Matematica >= 7.0
+49,UPB - Facultatea de Știința și Ingineria Materialelor,Materiale metalice/polimerice/ceramice,Materiale|Chimie|Mecanică,Chimie >= 7.5|Matematica >= 7.0
+50,UPB - Facultatea de Antreprenoriat, Ingineria și Managementul Afacerilor,Business tehnic și antreprenoriat,Business|Management|Inovare,Matematica >= 7.0|Economie >= 7.0
+51,ASE - Facultatea de Administrarea Afacerilor,Specializată în management și antreprenoriat,Business|Management|Economie,Matematica >= 7.0|Economie >= 7.0
+52,ASE - Facultatea de Cibernetică, Statistică și Informatică Economică,Analiză de date informatică aplicată și AI,Cibernetică|Informatica|Economie,Matematica >= 8.0|Informatica >= 7.5
+53,ASE - Facultatea de Economie Teoretică și Aplicată,Economie teoretică și macroeconomie,Economie|Analiză|Finanțe,Matematica >= 7.0|Economie >= 7.0
+54,ASE - Facultatea de Finanțe, Bănci și Asigurări,Studii financiare și investiții,Finanțe|Bănci|Contabilitate,Matematica >= 7.5|Economie >= 8.0
+55,ASE - Facultatea de Management,Programe moderne de leadership și administrare,Management|Business|Strategie,Economie >= 7.0|Matematica >= 7.0
+56,ASE - Facultatea de Marketing,Marketing comunicare și analiză de piață,Marketing|Publicitate|Comunicare,Romana >= 7.0|Matematica >= 6.5
+57,ASE - Facultatea de Comerț,Comerț internațional și afaceri,Economie|Business|Management,Matematica >= 7.0|Engleza >= 7.0
+58,ASE - Facultatea de Relații Economice Internaționale,Afaceri și comerț exterior,Relații internaționale|Economie|Politici publice,Engleza >= 7.5|Economie >= 7.0
+59,ASE - Facultatea de Contabilitate și Informatică de Gestiune,Contabilitate audit și informatică economică,Contabilitate|Audit|Informatica economica,Matematica >= 7.0|Economie >= 7.0
+60,ASE - Facultatea de Economie Agroalimentară și a Mediului,Economie aplicată în agricultură și mediu,Economie|Agricultură|Ecologie,Chimie >= 6.5|Matematica >= 7.0
+61,UMF Carol Davila - Facultatea de Medicină,Formează medici generaliști,Medicina|Biologie|Anatomie,Biologie >= 8.0|Chimie >= 7.5
+62,UMF Carol Davila - Facultatea de Medicină Dentară,Formează medici stomatologi,Stomatologie|Biologie|Chimie,Biologie >= 8.0|Chimie >= 7.5
+63,UMF Carol Davila - Facultatea de Farmacie,Studii farmaceutice și biochimie,Chimie|Farmacie|Biologie,Chimie >= 8.0|Biologie >= 7.5
+64,UMF Carol Davila - Facultatea de Moașe și Asistență Medicală,Programe pentru asistenți și moașe,Asistență medicală|Medicina|Psihologie,Biologie >= 7.5|Romana >= 7.0
+65,UNArte - Facultatea de Arte Plastice,Pictură sculptură grafică arte vizuale,Arte plastice|Pictura|Sculptura,Desen >= 8.0|Romana >= 6.0
+66,UNArte - Facultatea de Arte Decorative și Design,Design modă arte textile,Design|Textile|Grafică,Desen >= 8.5|Romana >= 6.0
+67,UNArte - Facultatea de Istoria și Teoria Artei,Studii teoretice despre artă și curente artistice,Istoria artei|Cultură|Design,Romana >= 7.0|Istorie >= 7.0
+68,UNArte - Facultatea de Pedagogia Artelor,Formare profesori arte vizuale și design,Arte|Educație|Design,Desen >= 7.5|Romana >= 7.0
+69,UNATC - Facultatea de Teatru,Actorie regie scenografie,Actorie|Regie|Scenografie,Interviu >= 8.0|Romana >= 7.0
+70,UNATC - Facultatea de Film,Film imagine montaj producție,Film|Regie|Scenaristică,Interviu >= 8.0|Romana >= 7.0
+71,UNATC - Facultatea de Arte Performative Multimedia,Multimedia și arte digitale,Multimedia|Design|Film,Informatica >= 7.0|Desen >= 7.0
+72,USAMV - Facultatea de Agricultură,Agricultură mecanizare protecția plantelor,Agricultură|Ecologie|Biotehnologii,Biologie >= 7.0|Chimie >= 6.5
+73,USAMV - Facultatea de Horticultură,Horticultură și peisagistică,Horticultură|Ecologie|Design,Chimie >= 6.5|Biologie >= 7.0
+74,USAMV - Facultatea de Medicină Veterinară,Medic veterinar și biotehnologii,Medicina|Biologie|Farmacie,Biologie >= 8.0|Chimie >= 7.0
+75,USAMV - Facultatea de Biotehnologii,Biotehnologii aplicate și alimentare,Biotehnologii|Chimie|Agricultură,Chimie >= 7.0|Biologie >= 7.0
+76,USAMV - Facultatea de Îmbunătățiri Funciare și Ingineria Mediului,Medii și resurse hidrice,Inginerie|Ecologie|Mediu,Fizica >= 6.5|Matematica >= 7.0
+77,USAMV - Facultatea de Management și Dezvoltare Rurală,Management rural și antreprenoriat agricol,Management|Agricultură|Economie,Economie >= 7.0|Matematica >= 6.5
+78,UTCN - Facultatea de Automatică și Calculatoare,Informatică sisteme AI,Informatica|Automatica|Machine Learning,Matematica >= 8.0|Informatica >= 8.0
+79,UTCN - Facultatea de Inginerie Electrică,Electrică electronică telecomunicații,Electrică|Electronica|Telecom,Matematica >= 8.0|Fizica >= 7.0
+80,UTCN - Facultatea de Construcții,Construcții civile și industriale,Constructii|Mecanică|Materiale,Matematica >= 7.0|Fizica >= 6.5
+81,UTCN - Facultatea de Inginerie Mecanică,Mecanică proiectare producție,Mecanică|Inginerie|Automatizări,Matematica >= 7.0|Fizica >= 6.5
+82,UTCN - Facultatea de Arhitectură și Urbanism,Arhitectură urbanism design,Arhitectura|Design|Constructii,Desen >= 8.0|Matematica >= 7.0
+83,UTCN - Facultatea de Materiale și Știința Mediului,Materiale ecologie procese industriale,Materiale|Mediu|Chimie,Chimie >= 7.0|Matematica >= 7.0
+84,UTCN - Facultatea de Inginerie a Instalațiilor,Instalații termotehnică energie,Energie|Instalații|Mediu,Matematica >= 7.0|Fizica >= 6.5
+85,UTCN - Facultatea de Inginerie Industrială,Producție robotică management industrial,Inginerie|Producție|Robotică,Matematica >= 7.0|Fizica >= 6.5
+86,UBT - Facultatea de Management,Specializată în antreprenoriat și leadership,Business|Management|Economie,Economie >= 7.0|Matematica >= 7.0
+87,UBT - Facultatea de Drept și Științe Administrative,Studii de drept european și administrație,Drept|Administrație|Etică,Romana >= 7.0|Istorie >= 7.0
+88,UBT - Facultatea de Informatică și Calculatoare,Programe moderne de software și rețelistică,Informatica|Rețelistică|Securitate cibernetică,Informatica >= 8.0|Matematica >= 8.0
+89,UBT - Facultatea de Design,Design interior grafic vestimentar,Design|Arte|Tehnologie,Desen >= 8.0|Romana >= 6.5
+90,UBT - Facultatea de Psihologie,Psihologie clinică și organizațională,Psihologie|Sociologie|Educație,Psihologie >= 8.0|Romana >= 7.0
+91,UBT - Facultatea de Educație Fizică și Sport,Sport kinetoterapie și educație fizică,Sport|Kinetoterapie|Psihologie,Biologie >= 7.0|Sport >= 8.0
+92,UBT - Facultatea de Științe Politice și Comunicare,Științe politice comunicare publică,Științe politice|Comunicare|Jurnalism,Romana >= 7.0|Engleza >= 7.0
+93,UO - Facultatea de Informatică și Științe,Informatică aplicată fizică și matematică,Informatica|Matematica|Fizica,Matematica >= 8.0|Informatica >= 7.5
+94,UO - Facultatea de Construcții, Cadastru și Arhitectură,Construcții inginerie civilă și design arhitectural,Constructii|Arhitectura|Design,Matematica >= 7.0|Fizica >= 6.5
+95,UO - Facultatea de Drept,Drept civil penal și administrativ,Drept|Etică|Administrație,Romana >= 7.0|Istorie >= 7.0
+96,UO - Facultatea de Economie,Științe economice finanțe și contabilitate,Economie|Finanțe|Contabilitate,Economie >= 7.0|Matematica >= 7.0
+97,UO - Facultatea de Inginerie Electrică și Management Industrial,Inginerie electrică și automatizări,Inginerie|Automatica|Electrică,Matematica >= 7.5|Fizica >= 7.0
+98,UO - Facultatea de Litere,Științe umaniste limbi străine,Litere|Traducere|Lingvistică,Romana >= 7.0|Engleza >= 7.0
+99,UO - Facultatea de Medicină și Farmacie,Studii medicale și farmaceutice,Medicina|Farmacie|Biologie,Biologie >= 8.0|Chimie >= 7.0
+100,UO - Facultatea de Istorie,Geografie și Relații Internaționale,Programe în istorie geografie și relații internaționale,Istorie|Geografie|Studii europene,Romana >= 7.0|Istorie >= 7.0
+101,UO - Facultatea de Științe Socio-Umane,Sociologie asistență socială psihologie,Psihologie|Sociologie|Asistență socială,Psihologie >= 8.0|Romana >= 7.0
+102,UVT - Facultatea de Arte și Design,Arte vizuale și design contemporan,Arte|Design|Grafică,Desen >= 8.0|Romana >= 6.0
+103,UVT - Facultatea de Chimie, Biologie și Geografie,Studii de științele naturii și mediu,Chimie|Biologie|Geografie,Biologie >= 7.0|Chimie >= 7.0
+104,UVT - Facultatea de Drept,Drept european public și internațional,Drept|Etică|Politici publice,Romana >= 7.0|Istorie >= 7.0
+105,UVT - Facultatea de Economie și de Administrare a Afacerilor,Economie contabilitate gestiune business,Economie|Contabilitate|Business,Economie >= 7.0|Matematica >= 7.0
+106,UVT - Facultatea de Educație Fizică și Sport,Sport kinetoterapie și performanță,Sport|Kinetoterapie|Psihologie,Biologie >= 7.0|Sport >= 8.0
+107,UVT - Facultatea de Fizică,Fizică aplicată materială teoretică,Fizica|Tehnologie|Materiale,Fizica >= 7.5|Matematica >= 7.5
+108,UVT - Facultatea de Informatică,Informatică programare AI și cloud,Informatica|Machine Learning|Cloud computing,Matematica >= 8.0|Informatica >= 8.0
+109,UVT - Facultatea de Litere, Istorie și Teologie,Litere istorie studii religioase,Litere|Istorie|Teologie,Romana >= 7.0|Istorie >= 7.0
+110,UVT - Facultatea de Matematică și Informatică,Matematică informatică aplicată statistică,Matematica|Informatica|Statistica,Matematica >= 8.0|Informatica >= 7.5
+111,UVT - Facultatea de Muzică și Teatru,Studii de interpretare muzicală și actorie,Muzică|Teatru|Performanță,Muzica >= 8.0|Interviu >= 8.0
+112,UVT - Facultatea de Sociologie și Psihologie,Sociologie psihologie asistență socială,Psihologie|Sociologie|Asistență socială,Psihologie >= 8.0|Romana >= 7.0
+113,UVT - Facultatea de Științe Politice, Filosofie și Comunicare,Științe politice și comunicare,Politici publice|Comunicare|Jurnalism,Romana >= 7.0|Engleza >= 7.0
+114,USV - Facultatea de Inginerie Electrică și Știința Calculatoarelor,IT automatică rețele software,Informatica|Automatica|Rețelistică,Matematica >= 8.0|Informatica >= 7.5
+115,USV - Facultatea de Inginerie Mecanică, Mecatronică și Management,Inginerie mecanică robotică,Inginerie|Mecanică|Robotică,Matematica >= 7.0|Fizica >= 6.5
+116,USV - Facultatea de Silvicultură,Silvicultură ecologie mediu,Silvicultură|Ecologie|Mediu,Biologie >= 7.0|Geografie >= 6.5
+117,USV - Facultatea de Economie, Administrație și Afaceri,Economie contabilitate afaceri,Economie|Management|Contabilitate,Economie >= 7.0|Matematica >= 7.0
+118,USV - Facultatea de Litere și Științe ale Comunicării,Litere comunicare limbi străine,Litere|Comunicare|Lingvistică,Romana >= 7.0|Engleza >= 7.0
+119,USV - Facultatea de Istorie și Geografie,Istorie geografie patrimoniu cultural,Istorie|Geografie|Patrimoniu,Romana >= 7.0|Istorie >= 7.0
+120,USV - Facultatea de Științe ale Educației,Pedagogie și psihologie educațională,Educatie|Psihologie|Sociologie,Romana >= 7.0|Psihologie >= 7.0

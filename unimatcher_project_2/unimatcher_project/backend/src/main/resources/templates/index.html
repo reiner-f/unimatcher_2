@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>UniMatcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+<div th:insert="~{navbar :: navbar}"></div>
+<div th:if="${param.logout}" class="text-green-400 mt-2">
+  Te-ai deconectat cu succes.
+</div>
+<div class="max-w-6xl mx-auto p-8">
+  <h1 class="text-4xl font-extrabold mb-6">UniMatcher — <span th:text="${studentName}">Student</span></h1>
+</div>
+
+<div id="admissionsCalendar" class="bg-gray-800 p-4 rounded mt-8"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const calendarEl = document.getElementById('admissionsCalendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          themeSystem: 'standard',
+          height: 600,
+          events: '/events',
+          eventColor: '#4f46e5',
+          eventClick: function(info) {
+              alert(info.event.title + "\n" + info.event.extendedProps.description);
+          }
+      });
+      calendar.render();
+  });
+</script>
+
+
+</body>
+</html>

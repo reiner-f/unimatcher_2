@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Recomandări</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+<div th:insert="~{navbar :: navbar}"></div>
+
+<div class="max-w-6xl mx-auto p-8">
+  <h2 class="text-3xl font-bold mb-6">
+    Recomandări pentru <span th:text="${student.name}">Student</span>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="recommendations-container">
+    <div th:each="f, iterStat : ${recommendations}"
+         class="bg-gray-800 p-4 rounded shadow hover:scale-105 transform transition"
+         th:attr="data-faculty-name=${f.name}, data-index=${iterStat.index}">
+
+      <h3 class="text-xl font-semibold mb-2" th:text="${f.name}">Facultate</h3>
+      <p class="text-gray-300 text-sm mb-3" th:text="${f.description}">Descriere</p>
+
+      <span class="text-indigo-400 text-xs mb-2 block"
+            th:text="'Recomandarea ' + ${f.rank}">#1</span>
+
+      <!-- Chat mini -->
+      <div class="chat-messages bg-gray-950 rounded p-2 h-28 overflow-y-auto text-sm mb-2"></div>
+
+      <input type="text" placeholder="Întreabă despre facultatea..."
+             class="chat-input w-full p-2 rounded bg-gray-900 text-white mb-1 border border-gray-700"/>
+
+      <button type="button"
+              class="send-btn w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded text-sm">
+        Trimite
+      </button>
+
+      <!-- CSRF token -->
+      <input type="hidden" th:value="${_csrf.token}" class="csrf-token"/>
+    </div>
+  </div>
+
+  <div class="mt-6"><a href="/" class="text-indigo-300 hover:underline">⬅ Înapoi</a></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".send-btn").forEach(button => {
+      button.addEventListener("click", async () => {
+        // Luăm cardul curent (cel care conține butonul)
+        const card = button.closest("[data-faculty-name]");
+        const facultyName = card.getAttribute("data-faculty-name");
+
+        const input = card.querySelector(".chat-input");
+        const messagesDiv = card.querySelector(".chat-messages");
+        const csrfToken = card.querySelector(".csrf-token").value;
+
+        const question = input.value.trim();
+        if (!question) return;
+
+        // Adăugăm mesajul userului
+        const userMsg = document.createElement("div");
+        userMsg.textContent = "Tu: " + question;
+        userMsg.className = "bg-gray-700 rounded px-2 py-1 mb-1";
+        messagesDiv.appendChild(userMsg);
+        input.value = "";
+
+        // Adăugăm mesajul de "scriere..."
+        const loading = document.createElement("div");
+        loading.textContent = "AI scrie...";
+        loading.className = "italic text-gray-400";
+        messagesDiv.appendChild(loading);
+
+        try {
+          const response = await fetch("/chatbot", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-CSRF-TOKEN": csrfToken
+            },
+            body: JSON.stringify({ facultyName, question })
+          });
+
+          const data = await response.json();
+          loading.remove();
+
+          const aiMsg = document.createElement("div");
+          aiMsg.textContent = "AI: " + (data.answer || "N-am primit răspuns.");
+          aiMsg.className = "bg-gray-800 rounded px-2 py-1 mb-1";
+          messagesDiv.appendChild(aiMsg);
+          messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        } catch (err) {
+          loading.remove();
+          const errMsg = document.createElement("div");
+          errMsg.textContent = "Eroare la conexiune.";
+          errMsg.className = "bg-red-700 rounded px-2 py-1 mb-1";
+          messagesDiv.appendChild(errMsg);
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

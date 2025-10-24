@@ -1,0 +1,5 @@
+target/
+*.class
+.idea/
+venv/
+__pycache__/

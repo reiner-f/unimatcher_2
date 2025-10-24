@@ -1,0 +1,19 @@
+<div id="admissionsCalendar" class="bg-gray-800 p-4 rounded mt-8"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const calendarEl = document.getElementById('admissionsCalendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          themeSystem: 'standard',
+          height: 600,
+          events: '/events',
+          eventColor: '#4f46e5',
+          eventClick: function(info) {
+              alert(info.event.title + "\n" + info.event.extendedProps.description);
+          }
+      });
+      calendar.render();
+  });
+</script>
